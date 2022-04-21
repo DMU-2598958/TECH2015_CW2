@@ -25,6 +25,58 @@ property: value;
 }
 
 body{
-  font-family: 'Arial', sans-serif;; /*this CSS rule was used to add the font to all the body's page*/
+  font-family: 'Arial', sans-serif; /*this CSS rule was used to add the font to all the body's page*/
   background-color: #F7F5F2; /*This rule in CSS is used to change the background colour*/
   color: #1B1A17; /*The color rule in CSS is used to change the text colours*/
+}
+
+header h1{
+  font-size: 13vw;
+  font-family: 'Microsoft Himalaya';
+  font-weight: 600;
+  letter-spacing: -1.8px;
+  padding-left: 5vw;
+  padding-top: 6vw;
+}
+header h1 a{
+  text-decoration: none;
+  color: #1B1A17;
+}
+nav{
+  background-color: #F7F5F2;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: right 0.5s ease-in;
+  /*right: -100%;*/
+}
+.navbar{
+  text-align: center;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+.navbar a{
+  text-decoration: none;
+  color: #1B1A17;
+  font-family: 'Microsoft Himalaya', sans-serif;
+  font-size: 15vw;
+  font-weight: 500;
+}
+
+.burger{ /*these rules were used to set the position of the burger. The position is absolute which means that the element is positioned relative to its first positioned ancestor element.*/
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 9vw;
+  right: 7vw;
+}
+
+.burger div{ /*to create the burger form the divs were set to have a black-ish background and the width and height were set to create the correct size of the two lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
+  width: 30px;
+  height: 4px;
+  background-color: #1B1A17;
+  margin: 5px;
+  border-radius: 8px;
+}

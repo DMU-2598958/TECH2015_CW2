@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!--to tell the browser this is an HTML file-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/> <!--The <meta> tag was used to describe information about the page, in this case, to tell
+      the browser to match the website width with the width of the device in which the website is being seen.
+      By adding this the page is now mobile friendly.-->
+    <title>Carolina Roques Portfolio</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" /> <!--This <link> tag defines the relationship between this document and
+      the CSS stylesheet: the href attribute tells where the CSS file is; the rel attribute tells how the document relates to the HTML file;
+      the type attribute describes what type of document it is.-->
+  </head>
+  <body>
+    <article class=""> <!--Semantic HTML elements were used to add some structure and help describe the contents of the page, starting with an article,
+    a self-contained composition-->
+      <header> <!--Inside the article, a header was added, which, in this case, is going to mark an introduction content.-->
+        <h1><a href="index.html">Carolina Roques</a></h1> <!--A <h1> is being used to tell the browser this is the most important heading.-->
+        <!--A <div> defines a division or a section. In this case, it is grouping the elements used to create the burger icon. The burger icon was created by using empty divs. Those divs were then styled in CSS to create the desired burger style.-->
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <!--The <nav> tag defines a set of navigation links. The <nav> was used to make the menu. Inside it, the menu structure was created using an unordered list with list items. Each list item has an <a> element, creating a link to every page.-->
+      </header>
+      <nav id="menu">
+        <ul class="navbar">
+          <li><a href="about.html">About</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="audio.html">Audio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </article>
+    <!--Just like the CSS external sheet, the same has to be done to link the pages to the JavaScript used. This element is put right before the end of the body, and link to the external sheet using a source attribute.-->
+    <script src="java/app.js"></script>
+  </body>
+</html>
