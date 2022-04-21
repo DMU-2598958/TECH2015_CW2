@@ -52,11 +52,7 @@ nav{
   transition: right 0.5s ease-in;
   /*right: -100%;*/
 }
-.navbar{
-  text-align: center;
-  padding-top: 50%;
-  padding-bottom: 50%;
-}
+
 .navbar a{
   text-decoration: none;
   color: #1B1A17;
@@ -64,6 +60,7 @@ nav{
   font-size: 15vw;
   font-weight: 500;
 }
+
 
 .burger{ /*these rules were used to set the position of the burger. The position is absolute which means that the element is positioned relative to its first positioned ancestor element.*/
   display: block;
