@@ -28,3 +28,7 @@ body{
   font-family: 'Arial', sans-serif;; /*this CSS rule was used to add the font to all the body's page*/
   background-color: #F7F5F2; /*This rule in CSS is used to change the background colour*/
   color: #1B1A17; /*The color rule in CSS is used to change the text colours*/
+  background-image: url("../img/DSC_0158.jpg");/*Adding a background image to an element can be done with this CSS property. The value for the property uses the url() CSS function to tell the browser where the image is.
+  In this case, the background image is inside a folder called 'img'*/
+  background-size: 0% 0%; /*used to resize the background image to cover the entire container*/
+  background-repeat: no-repeat; /* rule used to make the image only show once*/
