@@ -1,0 +1,25 @@
+/*CSS follows a strict format:
+selector{
+property: value;
+poperty: value;
+}
+The selector tells the browser which element is going to receive the styles rules, that are expressed as a list: 'property:value'. Each property needs to be separated with a semi-colon.
+It is possible to select more then one element, just separate them with an comma:
+selector 1,
+selector 2{
+property: value;
+}
+To select elements with a class use a full stop after the name of the element and write the class name, or just use a full stop and the
+class name to apply the style rules to all the elements in that class:
+selector.class{
+property: value;
+}
+or
+.class{
+property: value;
+}*/
+*{ /*The * selector selects all elements.The box-sizing property defines how the width and height of an element are calculated, in this case it will calculate including the content, padding and border*/
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
