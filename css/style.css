@@ -23,3 +23,7 @@ property: value;
   padding: 0px;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Microsoft Himalaya'; /*this CSS rule was used to add the font to all the body's page*/
+  background-color: #078544; /*This rule in CSS is used to change the background colour*/
