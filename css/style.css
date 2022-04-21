@@ -25,12 +25,6 @@ property: value;
 }
 
 body{
-  background-color: #F2EDE9; /*This rule in CSS is used to change the background colour*/
-
-h1{
-  font-family: 'Microsoft Himalaya'; /*this CSS rule was used to add the font to all the body's page*/
-}
-
-p{
   font-family: 'Arial', sans-serif;; /*this CSS rule was used to add the font to all the body's page*/
-}
+  background-color: #F7F5F2; /*This rule in CSS is used to change the background colour*/
+  color: #1B1A17; /*The color rule in CSS is used to change the text colours*/
