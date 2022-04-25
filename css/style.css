@@ -67,12 +67,17 @@ nav h1 a{
   text-decoration: none;
   color: #1B1A17;
 }
-.navbar{
+.relative{
   position: relative;
+
+}
+.navbar{
+  margin: 0;
+  position: absolute;
   top: 50%;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: 30px;
 }
 .navbar a{
   text-decoration: none;
@@ -91,9 +96,9 @@ nav h1 a{
 }
 
 .burger div{ /*to create the burger form the divs were set to have a black-ish background and the width and height were set to create the correct size of the two lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
-  width: 30px;
-  height: 4px;
+  width: 8vw;
+  height: 0.9vh;
   background-color: #1B1A17;
-  margin: 5px;
+  margin: 1vw;
   border-radius: 8px;
 }
