@@ -26,7 +26,7 @@ property: value;
 
 body{
   font-family: 'Arial', sans-serif; /*this CSS rule was used to add the font to all the body's page*/
-  background-color: #F7F5F2; /*This rule in CSS is used to change the background colour*/
+  background-color: #FFFFFF; /*This rule in CSS is used to change the background colour*/
   color: #1B1A17; /*The color rule in CSS is used to change the text colours*/
 }
 
@@ -42,11 +42,25 @@ header h1 a{
   text-decoration: none;
   color: #1B1A17;
 }
+.burger{ /*these rules were used to set the position of the burger. The position is absolute which means that the element is positioned relative to its first positioned ancestor element.*/
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 10.5vw;
+  right: 7vw;
+}
+.burger div{ /*to create the burger form the divs were set to have a black-ish background and the width and height were set to create the correct size of the two lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
+  width: 9vw;
+  height: 0.6vh;
+  background-color: #1B1A17;
+  margin: 1vw;
+  border-radius: 8px;
+}
 .relative{
   position: relative;
 }
 nav{
-  background-color: #F7F5F2;
+  background-color: #FFFFFF;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -87,31 +101,48 @@ nav h1 a{
   line-height: 55px;
   letter-spacing: -1px;
 }
-
-
-.burger{ /*these rules were used to set the position of the burger. The position is absolute which means that the element is positioned relative to its first positioned ancestor element.*/
-  display: block;
-  cursor: pointer;
+.socialmedialinks{
   position: absolute;
-  top: 10.5vw;
-  right: 7vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+}
+#instalogo,
+#twitterlogo{
+  width: 20%;
 }
 
-.burger div{ /*to create the burger form the divs were set to have a black-ish background and the width and height were set to create the correct size of the two lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
-  width: 9vw;
-  height: 0.6vh;
-  background-color: #1B1A17;
-  margin: 1vw;
-  border-radius: 8px;
+
+.aboutp1{
+  padding-left: 25px;
+  padding-top: 30px;
+  margin-right: 50px;
+
 }
-
-#instalogo{
-
+.aboutp1 p{
+  font-weight: bold;
+}
+.socialmedialinks2{
+  padding-left: 25px;
+  padding-top: 15px;
+}
+#instalogo2{
+  width: 7%;
+}
+#twitterlogo2{
+  width: 7%;
+  margin-left: 5vw;
+}
+.maintext{
+  margin: 6vw;
+}
+#me{
+  width: 100%;
 }
 
 .contacttext{
   padding-left: 25px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .contactp{
   font-weight: bold;
@@ -120,17 +151,17 @@ nav h1 a{
 }
 .containerform{ /*the container of the form was styled, a background colour was added as well as a border-radius to round the corners and a
   box-shadow to increase the depth. Its position was set using the margin rule and its width was set to 70%, occupying almost the whole page.*/
-  border-radius: 5px;
   padding: 10px;
   width: 90%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 input[type=text], select, textarea { /*Style inputs with type="text", select elements and textareas*/
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid 'black';
+  background-color: #FFFFFF;
   border-radius: 4px;
   box-sizing: border-box; /*Added to make sure that padding and width stays in place*/
   margin-top: 6px;
@@ -143,5 +174,18 @@ input[type=submit]{ /*style the submit button a specific background colour and s
   padding: 5px 15px;
   border: none;
   border-radius: 3px;
+  margin-left: auto;
+  margin-right: 0;
   cursor: pointer; /*the cursor changes to the pointer on the pc view to tell the visitor that it is possible to click on the button.*/
+}
+#status{ /*styling the status message and put its display to none. Once the button is pressed, with JavaScript, the display is going to change to 'block', showing the message.
+A transition was added to ease the the appearance of the phrase.*/
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+  display: none;
 }
