@@ -22,8 +22,51 @@
           <div class="line1"></div>
           <div class="line2"></div>
         </div>
-        <!--The <nav> tag defines a set of navigation links. The <nav> was used to make the menu. Inside it, the menu structure was created using an unordered list with list items. Each list item has an <a> element, creating a link to every page.-->
       </header>
+      <div class="relative">
+      <nav id="menu"> <!--The <nav> tag defines a set of navigation links. The <nav> was used to make the menu. Inside it, the menu structure was created using an unordered list with list items. Each list item has an <a> element, creating a link to every page.-->
+        <h1><a href="index.html">Carolina Roques</a></h1>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <div class="navbar">
+          <a href="about.html">About</a><br>
+          <a href="video.html">Video</a><br>
+          <a href="photography.html">Photography</a><br>
+          <a href="audio.html">Audio</a><br>
+          <a href="contact.html">Contact</a><br>
+        </div>
+        <img id="instalogo" src="img/instalogo.png" alt="Instagram's logo">
+      </nav>
+    </div>
+    <section>
+      <div class="contacttext">
+      <p class="contactp">Got something to say or ask?</p>
+      <p class="contactp">Get in touch with me :)).</p>
+      </div>
+      <div class="containerform">
+          <!--Usually, the information received by a form is stored on a PHP page. However, GitHub doesn't support PHP, and the only way to store information was by using a third-party program. Having that in mind, it was decided that the form would be made, but it wouldn't store information, only present a confirmation message.-->
+          <form class="" id="contactform">
+        <!--A form is created by using label tags that define a label for several elements; an input field, where the user can enter data, is the most important form element. In this case, the <input> tag has the 'text' and 'submit' types. A 'placeholder' presents a text in the input box before anything is written.-->
+            <label for="Fname">Name*</label>
+            <input type="text" id="Fname" name="firstname" placeholder="Your name...">
+
+            <label for="Email">E-mail*</label>
+            <input type="text" id="Email" name="email" placeholder="Your e-mail...">
+
+            <label for="Email">Subject*</label>
+            <input type="text" id="Email" name="email" placeholder="Your subject...">
+
+            <label for="Message">Message*</label>
+            <textarea id="Message" name="message" placeholder="Write your message here..." style="height:200px"></textarea>
+
+            <input id="submitbutton" type="submit" value="Submit">
+          </form>
+        </div>
+        <!--Message to be displayed once the submit button is pressed-->
+        <div id="status">Thank you for your messsage!</div>
+    </section>
     </article>
   </body>
 </html>

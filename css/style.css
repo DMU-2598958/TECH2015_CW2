@@ -53,7 +53,7 @@ nav{
   top: 0;
   z-index: 10;
   transition: right 0.5s ease-in;
-  /*right: -100%;*/
+  right: -100%;
 }
 nav h1{
   font-size: 9vw;
@@ -106,5 +106,42 @@ nav h1 a{
 }
 
 #instalogo{
-  
+
+}
+
+.contacttext{
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.contactp{
+  font-weight: bold;
+  letter-spacing: -0.50px;
+  font-size: 5vw;
+}
+.containerform{ /*the container of the form was styled, a background colour was added as well as a border-radius to round the corners and a
+  box-shadow to increase the depth. Its position was set using the margin rule and its width was set to 70%, occupying almost the whole page.*/
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+input[type=text], select, textarea { /*Style inputs with type="text", select elements and textareas*/
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /*Added to make sure that padding and width stays in place*/
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /*Allow the user to vertically resize the textarea (not horizontally)*/
+}
+input[type=submit]{ /*style the submit button a specific background colour and size*/
+  background-color: black;
+  color: #F6FFFF; /*colour of the text in the button*/
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; /*the cursor changes to the pointer on the pc view to tell the visitor that it is possible to click on the button.*/
 }
