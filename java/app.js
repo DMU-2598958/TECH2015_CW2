@@ -11,6 +11,7 @@ closeMenu = () => {
 };
 //Finally, two Events were added. First, it was necessary to add the context, that being referencing the elements to which the event was to occur. That was done using the 'document' object to get the 'burger' and 'cover' elements. Then, to tell the browser what was supposed to happen, the 'click' event was added, along with what should happen. The event placed in the 'burger' should trigger the 'openMenu' function, and click on the 'cover' should trigger the 'closeMenu'.
   document.getElementById("burger").addEventListener("click",openMenu);
+  document.getElementById('close').addEventListener("click",closeMenu);
 
 
 //When a function is called by an event listener, it is given information about the event. In this case, the event (evt) is set to 'preventDefault', stopping the page from reloading when the submit button of the form is pressed. The display of the 'status' element is also set to 'block.

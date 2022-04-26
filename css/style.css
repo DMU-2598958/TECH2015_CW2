@@ -42,25 +42,44 @@ header h1 a{
   text-decoration: none;
   color: #1B1A17;
 }
-.burger{ /*these rules were used to set the position of the burger. The position is absolute which means that the element is positioned relative to its first positioned ancestor element.*/
-  display: block;
+.menu-btn{ /*these rules were used to set the position of the burger. The position is absolute which means that the element is positioned relative to its first positioned ancestor element.*/
+  display: flex;
   cursor: pointer;
   position: absolute;
   top: 10.5vw;
   right: 7vw;
+  transition: all .5s ease-in-out;
 }
-.burger div{ /*to create the burger form the divs were set to have a black-ish background and the width and height were set to create the correct size of the two lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
+.menu-btn_burger{ /*to create the burger form the divs were set to have a black-ish background and the width and height were set to create the correct size of the two lines of the burger. The border radius was used to round the corners of the lines. The margin sets the space between the lines.*/
   width: 9vw;
   height: 0.6vh;
   background-color: #1B1A17;
   margin: 1vw;
   border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+  content: '';
+  position: absolute;
+  width: 9vw;
+  height: 0.6vh;
+  background-color: #1B1A17;
+  margin: 1vw;
+  border-radius: 8px;
+  transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before{
+  transform: translateY(-16px);
+}
+.menu-btn_burger::after{
+  transform: translateY(16px);
 }
 .relative{
   position: relative;
 }
 nav{
-  background-color: #FFFFFF;
+  background-color: #1B1A17;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -79,11 +98,10 @@ nav h1{
 }
 nav h1 a{
   text-decoration: none;
-  color: #1B1A17;
+  color: #FFFFFF;
 }
 .relative{
   position: relative;
-
 }
 .navbar{
   margin: 0;
@@ -95,7 +113,7 @@ nav h1 a{
 }
 .navbar a{
   text-decoration: none;
-  color: #1B1A17;
+  color: #FFFFFF;
   font-family: 'Playfair Display', serif;
   font-size: 10vw;
   line-height: 55px;
@@ -104,12 +122,13 @@ nav h1 a{
 .socialmedialinks{
   position: absolute;
   bottom: 0;
-  display: flex;
-  flex-direction: row;
+  margin-left: 35%;
+  margin-bottom: 5vh;
 }
 #instalogo,
 #twitterlogo{
-  width: 20%;
+  width: 15%;
+  margin: 10px;
 }
 
 
