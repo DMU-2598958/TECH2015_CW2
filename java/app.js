@@ -42,12 +42,12 @@ displaySlides(slideRatio);
 //To create the next/previous controls, a function was created to change its values between 1 and -1.
 function plusSlides(n) {
   displaySlides(slideRatio += n);
-}
+};
 
 //Match the number of the thumbnails to the slides.
 function currentSlide(n) {
   displaySlides (slideRatio = n);
-}
+};
 
 //Function created to change and control the slides.
 function displaySlides(n) {
