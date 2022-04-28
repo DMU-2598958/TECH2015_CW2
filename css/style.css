@@ -68,18 +68,26 @@ header h1 a{
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.relative{
-  position: relative;
-}
+
 nav{
-  background-color: #1B1A17;
-  height: 100%;
+  background-color: #FFFFFF;
+  height: 90%;
   width: 100%;
-  position: fixed;
-  top: 0;
+  position: absolute;
   z-index: 10;
   transition: right 0.5s ease-in;
+  bottom: 0;
   right: -100%;
+}
+nav.active{
+  background-color: #FFFFFF;
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  transition: right 0.5s ease-in;
+  bottom: 0;
+  right: 0;
 }
 nav h1{
   font-size: 9vw;
@@ -91,19 +99,19 @@ nav h1{
 }
 nav h1 a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: #1B1A17;
 }
 .navbar{
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 .navbar a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: #1B1A17;
   font-family: 'Playfair Display', serif;
   font-size: 10vw;
   line-height: 55px;
