@@ -30,6 +30,10 @@ body{
   color: #1B1A17; /*The color rule in CSS is used to change the text colours*/
 }
 
+header{
+  z-index: 10;
+  position: relative;
+}
 header h1{
   font-size: 9vw;
   font-family: 'Playfair Display', serif;
@@ -71,20 +75,20 @@ header h1 a{
 
 nav{
   background-color: #FFFFFF;
-  height: 90%;
+  height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   transition: right 0.5s ease-in;
   bottom: 0;
   right: -100%;
 }
 nav.active{
   background-color: #FFFFFF;
-  height: 90%;
+  height: 100%;
   width: 100%;
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 5;
   transition: right 0.5s ease-in;
   bottom: 0;
   right: 0;
@@ -92,7 +96,7 @@ nav.active{
 nav h1{
   font-size: 9vw;
   font-family: 'Playfair Display', serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -1.8px;
   padding-left: 5vw;
   padding-top: 6vw;
@@ -129,6 +133,7 @@ nav h1 a{
   margin: 10px;
 }
 
+
 .background{
   position: fixed;
   left: -12vw;
@@ -137,8 +142,50 @@ nav h1 a{
   max-width: 100%;
 }
 .background img{
+  width: 120vw;
+  opacity: 0.95;
+}
+#imgvideo{
+  width: 135vw;
+}
+#imgaudio{
   width: 120%;
-  opacity: 0.9;
+}
+.slides{
+  display: none;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes fade {
+  from {opacity: .6}
+  to {opacity: .95}
+}
+
+
+.options{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.options p{
+  text-align: center;
+}
+.v, .p{
+  margin-bottom: 40px;
+}
+.options a{
+  text-decoration: none;
+  color: #1B1A17;
+  font-family: 'Playfair Display', serif;
+  font-size: 10vw;
+  line-height: 55px;
+  letter-spacing: -1px;
+  font-weight: 500;
 }
 
 .aboutp1{
