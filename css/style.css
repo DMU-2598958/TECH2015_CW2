@@ -92,6 +92,7 @@ nav.active{
   transition: right 0.5s ease-in;
   bottom: 0;
   right: 0;
+  overflow: hidden;
 }
 nav h1{
   font-size: 9vw;
@@ -214,6 +215,131 @@ nav h1 a{
 #me{
   width: 100%;
 }
+
+.gallery{
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.columnDifferent{
+  -ms-flex: 33.3333%;
+  flex: 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 4px;
+}
+.columnDifferent img{
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+@media screen and (max-width: 300px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.nextAndprevious{
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw;
+}
+.nextAndprevious p a{
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 9vw;
+  color: #1B1A17;
+  font-weight: normal;
+}
+
+/*these rules were used to customize the background of the modal. The z-index was set to 11 so it above everything on the page.
+The overflow property specifies what should happen if content overflows an element's box, in this case, if overflow is clipped, a scroll bar should be added to see the rest of the content
+The modal has the width and height set to occupy the whole page*/
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #1B1A17;
+}
+/*the way used to place the image in the middle was by setting its top position to 50% and then transform the Y-axis to -50%.*/
+.modal-content{
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 90%; /*the width was set to 90% so it doesn't occupy the entire page's width*/
+}
+.close{ /*the 'X''s colour was set to white and it was placed on the top right corner of the page*/
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus { /*even though it can only be seen in the pc view, when hovered the X it is going to change colour*/
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.slides{ /*the slides display is set to none but that it then change, on the JavaScript, when an image is pressed*/
+  display: none;
+}
+.prev,
+.next { /*these properties set the size, position and style of the next and previous buttons.*/
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none; /*The user-select property specifies whether the text of an element can be selected, the 'none' prevents text selection*/
+}
+.next {
+  right: 0; /*Position the "next button" to the right*/
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover { /*on the pc view, when hovered, the arrow gains a background colour*/
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext { /*style and postition the numbers on the top left of the image*/
+  color: #f2f2f2;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
 
 .contacttext{
   padding-left: 25px;
