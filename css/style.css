@@ -137,33 +137,16 @@ nav h1 a{
 
 .background{
   position: fixed;
-  left: -12vw;
-  top: 0px;
+  top: 0;
   z-index: -10;
   max-width: 100%;
 }
 .background img{
-  width: 120vw;
-  opacity: 0.95;
-}
-#imgvideo{
-  width: 135vw;
-}
-#imgaudio{
   width: 120%;
+  opacity: 0.9;
 }
-.slides{
-  display: none;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-}
-@keyframes fade {
-  from {opacity: .6}
-  to {opacity: .95}
-}
+
+
 
 
 .options{
@@ -187,6 +170,7 @@ nav h1 a{
   line-height: 55px;
   letter-spacing: -1px;
   font-weight: 500;
+  ;
 }
 
 .aboutp1{
