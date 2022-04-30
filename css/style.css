@@ -352,6 +352,24 @@ The modal has the width and height set to occupy the whole page*/
 }
 
 
+.video{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.container{
+  max-width: 100%;
+
+}
+.silentvideo{
+  position: fixed;
+  top: 0px;
+  left: -700px;
+  width: 100%;
+  height: 100vh;
+}
+
 .contacttext{
   padding-left: 25px;
   padding-top: 30px;
