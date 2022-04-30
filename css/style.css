@@ -351,6 +351,17 @@ The modal has the width and height set to occupy the whole page*/
   top: 0;
 }
 
+.videos{
+  margin: 5vw;
+  padding-top: 5vw;
+}
+.videos h2{
+  margin-bottom: 5vw;
+}
+.description{
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+}
 
 
 .contacttext{
