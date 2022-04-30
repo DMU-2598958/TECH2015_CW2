@@ -136,17 +136,45 @@ nav h1 a{
 
 
 .background{
-  position: fixed;
-  top: 0;
-  z-index: -10;
-  max-width: 100%;
-}
-.background img{
-  width: 120%;
-  opacity: 0.9;
+  background: linear-gradient(-60deg, #9e0142, #5e4fa2, #fdae61 , #f46d43, #3288bd, #d53e4f, #abdda4, #66c2a5, #fee08b, #e6f598);
+  	background-size: 400% 400%;
+  	animation: gradient 15s ease infinite;
+  	height: 100vh;
+    width: 100vh;
+    position: fixed;
+    overflow: hidden;
+  /*background-image: url('../img/S/DSC_0213.jpg');
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;*/
 }
 
-
+@keyframes gradient {
+  0% {
+		background-position: 0% 25%;
+	}
+  10%{
+    background-position: 0% 50%;
+  }
+  25%{
+    background-position: 0% 75%;
+  }
+	50% {
+		background-position: 100% 50%;
+	}
+  75%{
+    background-position: 100% 100%;
+  }
+  90%{
+    background-position: 25% 100%;
+  }
+	100% {
+		background-position: 0% 10%;
+	}
+}
 
 
 .options{
