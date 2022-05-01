@@ -25,3 +25,7 @@ menuBtn.addEventListener('click', toggleMenu);
 
 //Finally, an event is added to the button, to, when clicked, trigger the 'submittedForm' function, making the phrase appear.
     document.getElementById("submitbutton").addEventListener("click",submittedForm);
+
+//
+
+//
