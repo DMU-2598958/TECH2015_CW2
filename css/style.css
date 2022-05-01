@@ -362,6 +362,13 @@ The modal has the width and height set to occupy the whole page*/
   margin-top: 5vw;
   margin-bottom: 10vw;
 }
+.audios{
+  margin: 5vw;
+  padding-top: 5vw;
+}
+.audios h2{
+  margin-bottom: 5vw;
+}
 
 
 .contacttext{
