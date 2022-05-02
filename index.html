@@ -15,7 +15,7 @@
   </head>
   <body class="index">
     <article class="">
-      <div class="backgroundNav"></div>
+      <div class="background"></div>
       <header> <!--Inside the article, a header was added, which, in this case, is going to mark an introduction content.-->
         <h1><a href="index.html">Carolina Roques</a></h1> <!--A <h1> is being used to tell the browser this is the most important heading.-->
         <!--A <div> defines a division or a section. In this case, it is grouping the elements used to create the burger icon. The burger icon was created by using empty divs. Those divs were then styled in CSS to create the desired burger style.-->
@@ -26,35 +26,22 @@
         </div>
       </header>
       <nav id="menu"> <!--The <nav> tag defines a set of navigation links. The <nav> was used to make the menu. Inside it, the menu structure was created using an unordered list with list items. Each list item has an <a> element, creating a link to every page.-->
-        <div class="background"></div>
+        <div class="backgroundNav"></div>
         <div class="navbar">
-          <a href="about.html">About</a><br>
-          <a href="video.html">Video</a><br>
-          <a href="photography.html">Photography</a><br>
-          <a href="audio.html">Audio</a><br>
-          <a href="contact.html">Contact</a><br>
+          <a href="about.html">About</a>
+          <a id="work" class="work" href="#">Work</a>
+          <div id="dropdown" class="dropdown">
+          <a href="video.html">Video</a>
+          <a href="photography.html">Photography</a>
+          <a href="audio.html">Audio</a>
+          </div>
+          <a href="contact.html">Contact</a>
         </div>
         <div class="socialmedialinks">
           <a href="https://www.instagram.com/carolroques/"><img id="instalogo" src="img/instalogo.png" alt="Instagram's logo"></a>
           <a href="https://twitter.com/Carol_Roques"><img id="twitterlogo" src="img/twitter_logo.png" alt="Twitter's logo"></a>
         </div>
       </nav>
-      <div class="nav2">
-        <div class="navbar">
-          <a href="about.html">About</a><br>
-          <a href="">Work</a><br>
-          <ul class="dropdown">
-            <li><a href="video.html">Video</a></li>
-            <li><a href="photography.html">Photography</a></li>
-            <li><a href="audio.html">Audio</a></li>
-          </ul>
-          <a href="contact.html">Contact</a><br>
-        </div>
-        <div class="socialmedialinks">
-          <a href="https://www.instagram.com/carolroques/"><img id="instalogo" src="img/instalogo.png" alt="Instagram's logo"></a>
-          <a href="https://twitter.com/Carol_Roques"><img id="twitterlogo" src="img/twitter_logo.png" alt="Twitter's logo"></a>
-        </div>
-      </div>
       <section>
       <div class="options">
         <div class="tback"><p class="v"><a href="video.html">Video</a></p></div>

@@ -23,7 +23,9 @@ header h1 a{
   text-decoration: none;
   color: #1B1A17;
 }
-.navbar{
+.navbar2{ /*sets the top and right values to 0. Then, the display is changed
+  to flex, which means now the text is sitting side to side. The justify-content is set to space around to evenly distribute the text in the element.
+  The overflow-y is set to 'inherit' to eliminate the rule added in the mobile view.*/
   display: flex;
   top: 0;
   right: 0;
@@ -32,8 +34,9 @@ header h1 a{
   padding-top: 4vw;
   justify-content: space-around;
   overflow-y: inherit;
+  list-style: none;
 }
-.navbar a{
+.navbar2 a{ /*these rules customize the anchor elements on the first listed items*/
   text-decoration: none;
   color: #1B1A17;
   font-family: 'Playfair Display', serif;
@@ -41,9 +44,9 @@ header h1 a{
   line-height: 55px;
   letter-spacing: -1px;
   margin-right: 4vw;
-  text-decoration: none;
 }
-.navbar ul {
+#nav2 ul ul{ /*these rules customize the appearance of the second unlisted item. To make it appear only when it is hovered, the opacity is set to 0
+  and visibility is set to hidden. A transition is added so that the ul takes 3s. to appear.*/
   position: absolute;
   top: 80px;
   transition: top .3s;
@@ -51,10 +54,29 @@ header h1 a{
   opacity: 0;
   visibility: hidden;
   list-style: none;
+  padding-top: 60px;
 }
-.navbar ul li:hover > ul{ /*The element>element selector is used to select elements with a specific parent. In this case is the <li> inside the <ul>.
+#nav2 ul li:hover > ul{ /*The element>element selector is used to select elements with a specific parent. In this case is the <li> inside the <ul>.
     The opacity and visibility values change to show the <ul>*/
     top: 70px;
     opacity: 1;
     visibility: visible;
+}
+#nav2 ul li a:hover { /*used to change the colour of the anchor elementes when hovered*/
+  opacity: 0.8;
+}
+#nav2 ul ul li{ /*these rules customize the second list items, being that the ones that appear when hovered. The flex added to the .navbar was
+  changed to none so that the text goes down instead of to the sides.*/
+  margin-top: 60px;
+}
+.socialmedialinks{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+#instalogo,
+#twitterlogo{
+  width: 100px;
+  margin-right: 2vw;
+  margin-bottom: 1vw;
 }
