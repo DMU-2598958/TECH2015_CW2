@@ -1,22 +1,5 @@
-let db = new PouchDB("usersData");
+let db = PouchDB("answers");
 
-      // This is the URL of the page, which contains the form parameters
-      let url = document.URL;
-
-      // searchParams allows us to identily all the parameters in the URL
-      let paramaters = (new URL(url)).searchParams;
-
-      // let's save the info in the database
-      let theDate = new Date().toISOString();
-      let user = {
-        _id: theDate,
-        name: paramaters.get("Fname"),
-        name: paramaters.get("Email"),
-        name: paramaters.get("Subject"),
-        name: paramaters.get("Message"),
-      };
-
-      db.put(user);
 
 
       function showAnswers (err, doc) {

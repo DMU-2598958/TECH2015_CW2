@@ -29,3 +29,17 @@ menuBtn.addEventListener('click', toggleMenu);
 //
 
 //
+
+let db = new PouchDB("answers");
+
+let newAnswer = {
+  _id: new Date().toISOString(),
+  name: document.getElementById("Fname").value,
+  email: document.getElementById("Email").value,
+  subject: document.getElementById("Subject").value,
+  message: document.getElementById("Message").value,
+};
+
+document.getElementById("submitbutton").addEventListener("click", addAnswer);
+
+db.put(newAnswer);
