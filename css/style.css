@@ -72,9 +72,7 @@ header h1 a{
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-#nav2{
-  display: none;
-}
+
 .work{
   display: none;
 }
@@ -546,52 +544,62 @@ nav{
   letter-spacing: -1px;
   margin-right: 4vw;
 }
+.navbar a:hover{
+opacity: 0.8;
+}
 .dropdown{
+  float: left;
+  overflow: hidden;
+}
+.work{
+  border: none;
+  outline: none;
+  background-color:inherit;
+  font-family: inherit;
+  text-decoration: none;
+  color: #1B1A17;
+  font-family: 'Playfair Display', serif;
+  font-size: 3vw;
+  line-height: 55px;
+  letter-spacing: -1px;
+  margin-right: 4vw;
+  cursor: pointer;
+}
+.work:hover{
+  opacity: 0.8;
+}
+.dropdown-content{
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 120px;
   transition: top .3s;
-  padding-top: 60px;
-  opacity: 0;
-  visibility: hidden;
+  padding-top: 30px;
+  z-index: 1;
+  display: none;
 }
-.dropdown a{
-  margin-top: 20px;
+.dropdown-content a {
+  float: none;
+  padding-bottom: 30px;;
+  text-decoration: none;
+  text-align: left;
+  display: block;
 }
-.work:hover .dropdown{ /*The element>element selector is used to select elements with a specific parent. In this case is the <li> inside the <ul>.
+.dropdown:hover .dropdown-content{ /*The element>element selector is used to select elements with a specific parent. In this case is the <li> inside the <ul>.
     The opacity and visibility values change to show the <ul>*/
-    opacity: 1;
-    visibility: visible;
+    display: block;
 }
 .socialmedialinks{
   position: absolute;
   bottom: 0;
-  right: 0;
-  left: auto;
-  top: auto;
-  margin-left: auto;
-  margin-right: 3px;
-  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-around;
 }
 #instalogo,
 #twitterlogo{
-  width: 5%;
-  margin: auto;
-}
-/*
-.socialmedialinks{
-  position: absolute;
-  bottom: 0;
-  margin-left: 35%;
-  margin-bottom: 5vh;
-}
-#instalogo,
-#twitterlogo{
-  width: 15%;
+  width: 200%;
   margin: 10px;
-}*/
+}
 
 .options{
   display: flex;
