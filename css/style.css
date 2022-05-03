@@ -162,7 +162,8 @@ nav h1 a{
     position: fixed;
     overflow: hidden;
 }
-.backgroundAudio{
+.backgroundAudio,
+.backgroundAudio2{
   background: linear-gradient(5deg, #9e0142, #5e4fa2, #fdae61 , #f46d43, #3288bd, #d53e4f, #abdda4, #66c2a5, #fee08b, #e6f598);
   	background-size: 400% 400%;
   	height: 100%;
@@ -171,7 +172,8 @@ nav h1 a{
     z-index: -10;
     overflow: hidden;
 }
-.backgroundVideo{
+.backgroundVideo,
+.backgroundVideo2{
   background: linear-gradient(30deg, #9e0142, #5e4fa2, #fdae61 , #f46d43, #3288bd, #d53e4f, #abdda4, #66c2a5, #fee08b, #e6f598);
     background-size: 400% 400%;
     height: 100%;
@@ -180,7 +182,8 @@ nav h1 a{
     z-index: -10;
     overflow: hidden;
 }
-.backgroundPhotography{
+.backgroundPhotography,
+.backgroundPhotography2{
   background: linear-gradient(50deg, #9e0142, #5e4fa2, #fdae61 , #f46d43, #3288bd, #d53e4f, #abdda4, #66c2a5, #fee08b, #e6f598);
     background-size: 400% 400%;
     height: 100%;
@@ -189,7 +192,8 @@ nav h1 a{
     z-index: -10;
     overflow: hidden;
 }
-.backgroundContact{
+.backgroundContact,
+.backgroundContact2{
   background: linear-gradient(25deg, #9e0142, #5e4fa2, #fdae61 , #f46d43, #3288bd, #d53e4f, #abdda4, #66c2a5, #fee08b, #e6f598);
     background-size: 400% 400%;
     height: 100%;
@@ -198,7 +202,8 @@ nav h1 a{
     z-index: -10;
     overflow: hidden;
 }
-.backgroundAbout{
+.backgroundAbout,
+.backgroundAbout2{
   background: linear-gradient(75deg, #9e0142, #5e4fa2, #fdae61 , #f46d43, #3288bd, #d53e4f, #abdda4, #66c2a5, #fee08b, #e6f598);
   	background-size: 400% 400%;
   	height: 100%;
@@ -478,7 +483,7 @@ A transition was added to ease the the appearance of the phrase.*/
 is used for computer screens, tablets, smartphones etc. The minimum height and width represent the minimum values that the display area has to have to receive the style inside this @media query.
 This rule was used mostly to create a responsive menu, meaning that there is a different menu for mobile view and pc view. Besides that main difference, the query was only used to change
 minor things like values of paddings, margins and font sizes. It was also used to add a pseudo-element, ':hover', to some of the buttons, links or headings.*/
-@media screen and (min-width: 976px) and (min-height: 650px){
+@media screen and (min-width: 700px) and (min-height: 650px){
 
 header{
     z-index: 10;
@@ -518,11 +523,26 @@ nav{
 .backgroundNav{
   display: none;
 }
+.backgroundAudio2{
+  display: none;
+}
+.backgroundVideo2{
+  display: none;
+}
+.backgroundPhotography2{
+  display: none;
+}
+.backgroundContact2{
+  display: none;
+}
+.backgroundAbout2{
+  display: none;
+}
 .navbar{
   display: flex;
   justify-content: space-around;
   margin: 0;
-  position: absolute;
+  position: relative;
   top: auto;
   left: auto;
   right: auto;
@@ -587,16 +607,9 @@ opacity: 0.8;
     display: block;
 }
 .socialmedialinks{
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
-#instalogo,
-#twitterlogo{
-  width: 200%;
-  margin: 10px;
-}
+
 
 .options{
   display: flex;
@@ -666,4 +679,54 @@ opacity: 0.8;
 .videos video{
   width: 50%;
   height: auto;
+}
+
+.aboutp1{
+  padding-left: 70px;
+  padding-top: 40px;
+  margin-right: 50px;
+}
+.aboutp1 p{
+  font-size: 25px;
+  font-weight: bold;
+}
+.socialmedialinks3{
+  padding-left: 70px;
+  padding-top: 15px;
+}
+#instalogo2{
+  width: 3%;
+}
+#twitterlogo2{
+  width: 3%;
+  margin-left: 3vw;
+}
+.maintext{
+  margin-top: 4vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-bottom: 6vw;
+}
+.maintext p{
+  font-size: 20px;
+}
+.flex{
+  display:flex;
+  flex-direction: row-reverse;
+  margin-left: 8vw;
+  margin-top: 4vw;
+}
+
+
+.containerform{
+  width: 70%;
+}
+.contacttext{
+  padding-left: 70px;
+  padding-top: 40px;
+}
+.contactp{
+  font-weight: bold;
+  letter-spacing: -0.50px;
+  font-size: 1.9vw;
 }
