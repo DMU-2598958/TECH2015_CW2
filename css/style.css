@@ -278,9 +278,6 @@ nav h1 a{
 .maintext{
   margin: 6vw;
 }
-#me{
-  width: 100%;
-}
 
 .gallery{
   margin-top: 5vw;
@@ -299,7 +296,7 @@ nav h1 a{
   max-width: 50%;
   padding: 0 4px;
 }
-.column img {
+.column picture {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
@@ -310,7 +307,7 @@ nav h1 a{
   max-width: 33.3333%;
   padding: 0 4px;
 }
-.columnDifferent img{
+.columnDifferent picture{
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
