@@ -633,69 +633,37 @@ opacity: 0.8;
   width: 30%;
 }
 
-/*.modal{
-  display: none;
-  position: fixed;
-  z-index: 11;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #1B1A17;
+
+.nextAndprevious{
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw;
+}
+.nextAndprevious p a{
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 3vw;
+  color: #1B1A17;
+  font-weight: normal;
 }
 
-.modal-content{
-  position: relative;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 90%;
+
+.first, .second, .third{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
-.close{
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+.second{
+  flex-direction: row-reverse;
 }
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
+.description{
+  padding: 25px;
 }
-.slides{
-  display: none;
+.videos h2
+.audios h2{
+  margin-bottom: 2vw;
 }
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.videos video{
+  width: 50%;
+  height: auto;
 }
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 18px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}*/
