@@ -10,7 +10,7 @@ let db = PouchDB("answers");
       "<tr><td>" +
       thisAnswer.Fname +
       "</td><td>" +
-      thisAnswer.Email +
+      thisAnswer.Email +                            //created by following the lab sheet from 19 of the academic year 2021/2022
       "</td><td>" +
       thisAnswer.Subject +
       "</td><td>" +

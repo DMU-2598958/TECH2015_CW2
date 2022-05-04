@@ -47,7 +47,7 @@
       </nav>
     <section>
       <div class="aboutp1">
-        <p>Hello, my name is Carolina Roques. <br>
+        <p>Hello, my name is Carolina Roques. <br> <!--Used the <p> element to add paragraphs of text.-->
           I'm currently a Media Production student at De Montfort University.</p>
       </div>
       <div class="socialmedialinks3">
@@ -59,9 +59,13 @@
         <p>I started gaining interest in Media through some of the group work I did in high school. Since I got my first camera, I have enjoyed taking pictures and recording moments.
           Now, in university, I have had the opportunity to produce interesting and creative pieces of work, this website is to showcase some of them</p>
       </div>
-      <picture>
+      <picture><!--The picture element allows the browser to selected the right imgage size for the width of the window. In this way it is posible to optimize the speed of the webpage-->
         <source media="(max-width: 700px)" srcset="img/S/DSC_0014.jpg" style="width:100%"/>
         <source media="(max-width: 1000px)" srcset="img/M/DSC_0014.jpg" style="width:100%"/>
+        <!--To add an image to a website we need to use the <img> tag, then,
+        inside that, we need to put two attributes: the source, that tells where the image is, and the alt attribute, that provides a small description of
+        the image to the browser, it's also what the screen reader will read. With the style attribute, I told the browser to limit the width of the image
+        to 100%, so that it can't be any wider than the device it's in-->
         <img src="img/B/DSC_0014.jpg" alt="" style="width:100%">
       </picture>
       </div>

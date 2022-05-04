@@ -34,7 +34,7 @@ let db = new PouchDB("answers");
 
 let newAnswer = {
   _id: new Date().toISOString(),
-  name: document.getElementById("Fname").value,
+  name: document.getElementById("Fname").value,                       //created by following the lab sheet from 19 of the academic year 2021/2022
   email: document.getElementById("Email").value,
   subject: document.getElementById("Subject").value,
   message: document.getElementById("Message").value,
