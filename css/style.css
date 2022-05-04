@@ -478,8 +478,8 @@ This rule was used mostly to create a responsive menu, meaning that there is a d
 minor things like values of paddings, margins and font sizes. It was also used to add a pseudo-element, ':hover', to some of the buttons, links or headings.*/
 @media screen and (min-width: 700px) and (min-height: 650px){
 
-header{
-    z-index: 10;
+header{ /*small changes, such as font sizing and padding, were made to the header so it would fit better in the page*/
+    z-index: 5;
     position: relative;
 }
 header h1{
@@ -496,7 +496,7 @@ header h1 a{
 }
 
 
-.burger{
+.burger{ /*the burger div is usually only used in the mobile view, as it is a better way to add a menu without occupying much of the page. So it is necessary to hide it in the web version since it is not going to be used.*/
     display: none;
 }
 
@@ -504,7 +504,7 @@ nav{
   height: 100%;
   width: auto;
   position: absolute;
-  z-index: 0;
+  z-index: 10; /*the z-index was changed to 10 so that the nav would sit on top of the header. If not changed, the nav would appear but it wouldn't work*/
   transition: none;
   bottom: auto;
   right: 0;
@@ -516,7 +516,7 @@ nav{
 .backgroundNav{
   display: none;
 }
-.backgroundAudio2{
+.backgroundAudio2{ /*background was also taken down so it doesn't cover the content of the page*/
   display: none;
 }
 .backgroundVideo2{
@@ -554,10 +554,10 @@ nav{
   letter-spacing: -1px;
   margin-right: 4vw;
 }
-.navbar a:hover{
+.navbar a:hover{ /*change the opacity of the a elements when hovered so that the user knows that they are clickable*/
 opacity: 0.8;
 }
-.dropdown{
+.dropdown{ /* the dropdown manu was made based on a toturial from W3schools (https://www.w3schools.com/css/css_dropdowns.asp)*/
   float: left;
   overflow: hidden;
 }
@@ -604,7 +604,7 @@ opacity: 0.8;
 
 
 .options{
-  display: flex;
+  display: flex; /*change the display to flex so the options sit next to aone another*/
 }
 .options p{
   text-align: center;
@@ -635,7 +635,7 @@ opacity: 0.8;
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
-  width: 30%;
+  width: 30%; /* the vertical photos were cut of if let with a 90% width so the width was reduced to 30%. in this way it is possible to see every photo correctly*/
 }
 
 
